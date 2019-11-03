@@ -1,0 +1,6 @@
+[FSCStayConscious X2AbilityTemplate]
+LocFriendlyName="Stay Conscious"
+LocLongDescription="Grants immunity to unconsciousness."
+LocHelpText="Immune to unconsciousness."
+LocFlyOverText="Stay Conscious"
+LocPromotionPopupText="<Bullet/> Passive effect."

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="12" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>ab861dc9-70d7-457b-88ec-43d2ca9b3774</Guid>
+    <Name>WotcFieldSurvivalStats</Name>
+    <Description>Upgrade soldier stats to improve their chances of survival.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcFieldSurvivalStats</AssemblyName>
+    <RootNamespace>WotcFieldSurvivalStats</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComGameData_CharacterStats.ini" />
+    <Content Include="Config\XComGameData_WeaponData.ini" />
+    <Content Include="ReadMe.md" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

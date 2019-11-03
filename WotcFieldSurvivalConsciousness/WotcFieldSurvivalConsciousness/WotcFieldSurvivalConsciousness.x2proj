@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="12" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>7671ce4f-bf3e-48d3-bf7e-16eaeee71c6d</Guid>
+    <Name>WotcFieldSurvivalConsciousness</Name>
+    <Description>XCOM troops cannot be rendered unconscious.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcFieldSurvivalConsciousness</AssemblyName>
+    <RootNamespace>WotcFieldSurvivalConsciousness</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization" />
+    <Folder Include="Src" />
+    <Folder Include="Src\WotcFieldSurvivalConsciousness" />
+    <Folder Include="Src\WotcFieldSurvivalConsciousness\Classes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComFieldSurvivalConsciousness.ini" />
+    <Content Include="ReadMe.md" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\WotcFieldSurvivalConsciousness\Classes\X2Ability_FieldSurvivalConsciousness.uc" />
+    <Content Include="Src\WotcFieldSurvivalConsciousness\Classes\X2DownloadableContentInfo_FieldSurvivalConsciousness.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

@@ -1,0 +1,6 @@
+[FieldSurvivalKit X2AbilityTemplate]
+LocFriendlyName="Field Survival Kit"
+LocLongDescription="This soldier carries a survival kit in the field, with extra utility items."
+LocHelpText="Carrying extra utility items."
+LocFlyOverText="Field Survival Kit"
+LocPromotionPopupText="<Bullet/> Passive effect."

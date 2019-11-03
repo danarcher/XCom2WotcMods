@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="12" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>13d125dc-db38-4135-ad0a-18a1b32d41a1</Guid>
+    <Name>WotcFieldSurvivalKits</Name>
+    <Description>Equip every soldier with a field survival kit during missions, which includes a medkit and smoke grenade, in addition to their equipped items.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcFieldSurvivalKits</AssemblyName>
+    <RootNamespace>WotcFieldSurvivalKits</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Localization" />
+    <Folder Include="Src\WotcFieldSurvivalKits\Classes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComFieldSurvivalKits.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="ReadMe.md" />
+    <Content Include="Src\WotcFieldSurvivalKits\Classes\FSKAbilities.uc" />
+    <Content Include="Src\WotcFieldSurvivalKits\Classes\FSKDLCInfo.uc" />
+    <Content Include="Src\WotcFieldSurvivalKits\Classes\FSKTemporaryItemEffect.uc" />
+    <Content Include="Src\WotcFieldSurvivalKits\Classes\FSKTemporaryItemEffectGameState.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

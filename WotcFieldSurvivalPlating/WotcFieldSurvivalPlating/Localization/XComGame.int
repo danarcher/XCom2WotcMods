@@ -1,0 +1,14 @@
+[FSPCeramicPlating X2EquipmentTemplate]
+FriendlyName="Advanced Ceramic Plating"
+BriefSummary="Ceramic plating with ablative armor."
+TacticalText="Ceramic plating with ablative armor."
+
+[FSPAlloyPlating X2EquipmentTemplate]
+FriendlyName="Advanced Alloy Plating"
+BriefSummary="Alloy plating with ablative armor."
+TacticalText="Alloy plating with ablative armor."
+
+[FSPChitinPlating X2EquipmentTemplate]
+FriendlyName="Advanced Hybrid Plating"
+BriefSummary="Hybrid plating with ablative armor."
+TacticalText="Hybrid plating with ablative armor."
