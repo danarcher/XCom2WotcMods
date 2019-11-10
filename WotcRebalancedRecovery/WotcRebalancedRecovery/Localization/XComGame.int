@@ -1,0 +1,5 @@
+[XComGame.X2StrategyGameRulesetDataStructures]
+[X2StrategyGameRulesetDataStructures]
+WoundStatusStrings[0]="Lightly Wounded"
+WoundStatusStrings[1]="Wounded"
+WoundStatusStrings[2]="Gravely Wounded"
