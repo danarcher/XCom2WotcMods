@@ -20,7 +20,6 @@
     <Content Include="Config\XComGame.ini" />
     <Content Include="Localization\XComGame.int" />
     <Content Include="ModPreview.jpg" />
-    <Content Include="ReadMe.md" />
     <Content Include="Src\WotcFieldSurvivalKits\Classes\FSKAbilities.uc" />
     <Content Include="Src\WotcFieldSurvivalKits\Classes\FSKDLCInfo.uc" />
     <Content Include="Src\WotcFieldSurvivalKits\Classes\FSKTemporaryItemEffect.uc" />

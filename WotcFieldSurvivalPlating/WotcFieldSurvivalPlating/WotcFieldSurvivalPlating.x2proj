@@ -24,7 +24,6 @@
     <Content Include="Content\UILibrary_FieldSurvivalPlating.upk" />
     <Content Include="Localization\XComGame.int" />
     <Content Include="ModPreview.jpg" />
-    <Content Include="ReadMe.md" />
     <Content Include="Src\WotcFieldSurvivalPlating\Classes\FieldSurvivalPlating.uc" />
     <Content Include="Src\WotcFieldSurvivalPlating\Classes\FieldSurvivalPlatingAbility.uc" />
     <Content Include="Src\WotcFieldSurvivalPlating\Classes\FieldSurvivalPlatingRegenEffect.uc" />

@@ -10,20 +10,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Config" />
-    <Folder Include="Content\" />
     <Folder Include="Localization" />
-    <Folder Include="Src" />
-    <Folder Include="Src\WotcFieldSurvivalUniforms" />
     <Folder Include="Src\WotcFieldSurvivalUniforms\Classes" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\XComFieldSurvivalUniforms.ini" />
-    <Content Include="ReadMe.md" />
-    <Content Include="ModPreview.jpg" />
     <Content Include="Config\XComEditor.ini" />
     <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComFieldSurvivalUniforms.ini" />
     <Content Include="Config\XComGame.ini" />
     <Content Include="Localization\XComGame.int" />
+    <Content Include="ModPreview.jpg" />
     <Content Include="Src\WotcFieldSurvivalUniforms\Classes\UIScreenListener_UIArmory_MainMenu_FieldSurvivalUniforms.uc" />
     <Content Include="Src\WotcFieldSurvivalUniforms\Classes\X2DownloadableContentInfo_FieldSurvivalUniforms.uc" />
   </ItemGroup>

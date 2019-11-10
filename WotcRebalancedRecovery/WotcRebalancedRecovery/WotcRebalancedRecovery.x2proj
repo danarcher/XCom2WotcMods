@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="12" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Guid>364e1c17-c4f9-4071-b898-e6261a2baaa6</Guid>
     <Name>WotcRebalancedRecovery</Name>
@@ -9,15 +9,18 @@
     <RootNamespace>WotcRebalancedRecovery</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Config\" />
-    <Folder Include="Localization\" />
+    <Folder Include="Config" />
+    <Folder Include="Localization" />
+    <Folder Include="Src\WotcRebalancedRecovery\Classes" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModPreview.jpg" />
     <Content Include="Config\XComEditor.ini" />
     <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
     <Content Include="Config\XComGameData.ini" />
     <Content Include="Localization\XComGame.int" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Src\WotcRebalancedRecovery\Classes\X2DownloadableContentInfo_RebalancedRecovery.uc" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
 </Project>

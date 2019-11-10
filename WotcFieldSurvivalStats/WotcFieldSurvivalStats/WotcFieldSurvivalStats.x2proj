@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project ToolsVersion="12" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Guid>ab861dc9-70d7-457b-88ec-43d2ca9b3774</Guid>
@@ -12,13 +12,12 @@
     <Folder Include="Config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\XComGameData_CharacterStats.ini" />
-    <Content Include="Config\XComGameData_WeaponData.ini" />
-    <Content Include="ReadMe.md" />
-    <Content Include="ModPreview.jpg" />
     <Content Include="Config\XComEditor.ini" />
     <Content Include="Config\XComEngine.ini" />
     <Content Include="Config\XComGame.ini" />
+    <Content Include="Config\XComGameData_CharacterStats.ini" />
+    <Content Include="Config\XComGameData_WeaponData.ini" />
+    <Content Include="ModPreview.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
 </Project>
