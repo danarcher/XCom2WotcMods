@@ -1,6 +1,9 @@
 class X2DownloadableContentInfo_FieldSurvivalPlating
     extends X2DownloadableContentInfo
+    dependson(FieldSurvivalPlating)
     config(FieldSurvivalPlating);
+
+`define FSPLOG(message) `LOG(`message,, 'FieldSurvivalPlating')
 
 var config array<name> ARMOR_ADD_UTILITY_SLOT;
 
@@ -16,6 +19,7 @@ static event InstallNewCampaign(XComGameState StartState)
 static event OnPostTemplatesCreated()
 {
     AddUtilitySlots();
+    AugmentArmor();
 }
 
 static function UpdateStorage()
@@ -82,6 +86,41 @@ static function AddUtilitySlots()
         if (Armor != none)
         {
             Armor.bAddsUtilitySlot = true;
+        }
+    }
+}
+
+static function AugmentArmor()
+{
+    local X2ItemTemplateManager ItemManager;
+    local FSPPlatingInfo Info;
+    local X2ArmorTemplate Template;
+
+    ItemManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
+
+    foreach class'FieldSurvivalPlating'.default.PLATING(Info)
+    {
+        if (Info.ModifyArmorTemplate != '')
+        {
+            `FSPLOG("Modifying armor template " $ Info.ModifyArmorTemplate);
+            Template = X2ArmorTemplate(ItemManager.FindItemTemplate(Info.ModifyArmorTemplate));
+            if (Template != none)
+            {
+                if (Info.Ability != '')
+                {
+                    Template.Abilities.AddItem(Info.Ability);
+                    if (Info.Shield > 0)
+                    {
+                        // TODO: Fix HP and armor stat markup to base plus ability mod!
+                        Template.SetUIStatMarkup("Ablative HP", eStat_ShieldHP, Info.Shield);
+                    }
+                }
+            }
+            else
+            {
+                // Red screens aren't visible yet!
+                `FSPLOG("Armor template " $ Info.ModifyArmorTemplate $ " not found!");
+            }
         }
     }
 }

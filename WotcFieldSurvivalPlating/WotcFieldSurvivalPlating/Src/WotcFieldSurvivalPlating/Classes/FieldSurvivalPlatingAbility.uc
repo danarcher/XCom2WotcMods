@@ -1,45 +1,32 @@
 class FieldSurvivalPlatingAbility extends X2Ability
-    dependson (XComGameStateContext_Ability) config(GameCore);
+    dependson(XComGameStateContext_Ability)
+    dependson(FieldSurvivalPlating)
+    config(GameCore);
+
+`define FSPLOG(message) `LOG(`message,, 'FieldSurvivalPlating')
 
 static function array<X2DataTemplate> CreateTemplates()
 {
     local array<X2DataTemplate> Templates;
+    local FSPPlatingInfo Info;
 
-    Templates.AddItem(
-        CreatePlatingAbility(
-            'FSPCeramicPlatingBonus',
-            class'FieldSurvivalPlating'.default.CERAMIC_HP,
-            class'FieldSurvivalPlating'.default.CERAMIC_HP_REGEN,
-            class'FieldSurvivalPlating'.default.CERAMIC_HP_REGEN_MAX,
-            class'FieldSurvivalPlating'.default.CERAMIC_SHIELD,
-            class'FieldSurvivalPlating'.default.CERAMIC_SHIELD_REGEN,
-            class'FieldSurvivalPlating'.default.CERAMIC_SHIELD_REGEN_MAX,
-            class'FieldSurvivalPlating'.default.CERAMIC_ARMOR_CHANCE,
-            class'FieldSurvivalPlating'.default.CERAMIC_ARMOR_AMOUNT));
-
-    Templates.AddItem(
-        CreatePlatingAbility(
-            'FSPAlloyPlatingBonus',
-            class'FieldSurvivalPlating'.default.ALLOY_HP,
-            class'FieldSurvivalPlating'.default.ALLOY_HP_REGEN,
-            class'FieldSurvivalPlating'.default.ALLOY_HP_REGEN_MAX,
-            class'FieldSurvivalPlating'.default.ALLOY_SHIELD,
-            class'FieldSurvivalPlating'.default.ALLOY_SHIELD_REGEN,
-            class'FieldSurvivalPlating'.default.ALLOY_SHIELD_REGEN_MAX,
-            class'FieldSurvivalPlating'.default.ALLOY_ARMOR_CHANCE,
-            class'FieldSurvivalPlating'.default.ALLOY_ARMOR_AMOUNT));
-
-    Templates.AddItem(
-        CreatePlatingAbility(
-            'FSPChitinPlatingBonus',
-            class'FieldSurvivalPlating'.default.CHITIN_HP,
-            class'FieldSurvivalPlating'.default.CHITIN_HP_REGEN,
-            class'FieldSurvivalPlating'.default.CHITIN_HP_REGEN_MAX,
-            class'FieldSurvivalPlating'.default.CHITIN_SHIELD,
-            class'FieldSurvivalPlating'.default.CHITIN_SHIELD_REGEN,
-            class'FieldSurvivalPlating'.default.CHITIN_SHIELD_REGEN_MAX,
-            class'FieldSurvivalPlating'.default.CHITIN_ARMOR_CHANCE,
-            class'FieldSurvivalPlating'.default.CHITIN_ARMOR_AMOUNT));
+    foreach class'FieldSurvivalPlating'.default.PLATING(Info)
+    {
+        if (Info.Ability != '')
+        {
+            `FSPLOG("Creating ability template " $ Info.Ability);
+            Templates.AddItem(CreatePlatingAbility(
+                Info.Ability,
+                Info.HP,
+                Info.HPRegen,
+                Info.HPRegenMax,
+                Info.Shield,
+                Info.ShieldRegen,
+                Info.ShieldRegenMax,
+                Info.ArmorChance,
+                Info.ArmorAmount));
+        }
+    }
 
     return Templates;
 }

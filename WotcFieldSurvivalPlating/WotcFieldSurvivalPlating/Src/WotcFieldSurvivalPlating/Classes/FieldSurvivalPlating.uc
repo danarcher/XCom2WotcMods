@@ -1,42 +1,61 @@
 class FieldSurvivalPlating extends X2Item config(FieldSurvivalPlating);
 
-var config int CERAMIC_HP;
-var config int CERAMIC_SHIELD;
-var config int CERAMIC_HP_REGEN;
-var config int CERAMIC_HP_REGEN_MAX;
-var config int CERAMIC_SHIELD_REGEN;
-var config int CERAMIC_SHIELD_REGEN_MAX;
-var config int CERAMIC_ARMOR_CHANCE;
-var config int CERAMIC_ARMOR_AMOUNT;
+`define FSPLOG(message) `LOG(`message,, 'FieldSurvivalPlating')
 
-var config int ALLOY_HP;
-var config int ALLOY_SHIELD;
-var config int ALLOY_HP_REGEN;
-var config int ALLOY_HP_REGEN_MAX;
-var config int ALLOY_SHIELD_REGEN;
-var config int ALLOY_SHIELD_REGEN_MAX;
-var config int ALLOY_ARMOR_CHANCE;
-var config int ALLOY_ARMOR_AMOUNT;
+struct native FSPPlatingInfo
+{
+    // The plating ability and associated stats.
+    var name Ability;
+    var int HP;
+    var int HPRegen;
+    var int HPRegenMax;
+    var int Shield;
+    var int ShieldRegen;
+    var int ShieldRegenMax;
+    var int ArmorChance;
+    var int ArmorAmount;
 
-var config int CHITIN_HP;
-var config int CHITIN_SHIELD;
-var config int CHITIN_HP_REGEN;
-var config int CHITIN_HP_REGEN_MAX;
-var config int CHITIN_SHIELD_REGEN;
-var config int CHITIN_SHIELD_REGEN_MAX;
-var config int CHITIN_ARMOR_CHANCE;
-var config int CHITIN_ARMOR_AMOUNT;
+    // If we're modifying an existing armor template, name it.
+    var name ModifyArmorTemplate;
+
+    // If we're creating a new item type, name it and fully specify the new
+    // schematic which creates it.
+    var name Item;
+    var string Image;
+    var int Tier;
+    var name Schematic;
+    var name BaseItem;
+    var name TechName;
+    var int Engineering;
+    var int Supplies;
+    var int Alloys;
+    var int Elerium;
+    var name ArtifactName;
+    var int ArtifactCount;
+};
+
+var config array<FSPPlatingInfo> PLATING;
 
 static function array<X2DataTemplate> CreateTemplates()
 {
     local array<X2DataTemplate> Templates;
+    local FSPPlatingInfo Info;
 
-    Templates.AddItem(CreatePlating('FSPCeramicPlating', 'FSPCeramicPlatingBonus', "Inv_Plating_1", default.CERAMIC_HP, default.CERAMIC_SHIELD, default.CERAMIC_ARMOR_AMOUNT, 0, '', ''));
-    Templates.AddItem(CreatePlating('FSPAlloyPlating', 'FSPAlloyPlatingBonus', "Inv_Plating_2", default.ALLOY_HP, default.ALLOY_SHIELD, default.ALLOY_ARMOR_AMOUNT, 1, 'FSPAlloyPlating_Schematic', 'FSPCeramicPlating'));
-    Templates.AddItem(CreatePlating('FSPChitinPlating', 'FSPChitinPlatingBonus', "Inv_Plating_3", default.CHITIN_HP, default.CHITIN_SHIELD, default.CHITIN_ARMOR_AMOUNT, 2, 'FSPChitinPlating_Schematic', 'FSPAlloyPlating'));
+    `FSPLOG(default.PLATING.Length $ " plating entries found.");
 
-    Templates.AddItem(CreateSchematic('FSPAlloyPlating_Schematic', 'FSPAlloyPlating', 'PlatedArmor', "Inv_Plating_2", 10, 75, 15, 3, 'CorpseAdventTrooper', 3));
-    Templates.AddItem(CreateSchematic('FSPChitinPlating_Schematic', 'FSPChitinPlating', 'PoweredArmor', "Inv_Plating_3", 20, 125, 30, 5, 'CorpseAdventTrooper', 6));
+    foreach default.PLATING(Info)
+    {
+        if (Info.Item != '')
+        {
+            `FSPLOG("Creating item template " $ Info.Item);
+            Templates.AddItem(CreatePlating(Info.Item, Info.Ability, Info.Image, Info.HP, Info.Shield, Info.ArmorAmount, Info.Tier, Info.Schematic, Info.BaseItem));
+        }
+        if (Info.Schematic != '')
+        {
+            `FSPLOG("Creating schematic " $ Info.Schematic);
+            Templates.AddItem(CreateSchematic(Info.Schematic, Info.Item, Info.TechName, Info.Image, Info.Engineering, Info.Supplies, Info.Alloys, Info.Elerium, Info.ArtifactName, Info.ArtifactCount));
+        }
+    }
 
     return Templates;
 }
@@ -48,7 +67,7 @@ static function X2DataTemplate CreatePlating(name ItemName, name AbilityName, st
     `CREATE_X2TEMPLATE(class'X2EquipmentTemplate', Template, ItemName);
     Template.ItemCat = 'defense';
     Template.InventorySlot = eInvSlot_Utility;
-    Template.strImage = "img:///UILibrary_FieldSurvivalPlating." $ Image;
+    Template.strImage = Image;
     Template.EquipSound = "StrategyUI_Vest_Equip";
 
     Template.Abilities.AddItem(AbilityName);
