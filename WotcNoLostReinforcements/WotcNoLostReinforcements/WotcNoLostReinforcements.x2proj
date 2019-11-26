@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>faad92f4-5ff7-4743-9aff-da6b9427227f</Guid>
+    <Name>WotcNoLostReinforcements</Name>
+    <Description></Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcNoLostReinforcements</AssemblyName>
+    <RootNamespace>WotcNoLostReinforcements</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WotcNoLostReinforcements\" />
+    <Folder Include="Src\WotcNoLostReinforcements\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\WotcNoLostReinforcements\Classes\X2DownloadableContentInfo_WotcNoLostReinforcements.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

@@ -1,0 +1,19 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# XCOM ModBuddy Solution File, Format Version 11.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{a9bf9d19-335c-4bf1-a05c-7a39a1281a36}") = "WotcNoLostReinforcements", "WotcNoLostReinforcements\WotcNoLostReinforcements.x2proj", "{dfbc5cc9-eacd-497e-8cdc-e48e97bc2e1b}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|XCOM 2 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{dfbc5cc9-eacd-497e-8cdc-e48e97bc2e1b}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
+		{dfbc5cc9-eacd-497e-8cdc-e48e97bc2e1b}.Default|XCOM 2.Build.0 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
