@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="12" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Guid>e859d2fb-7cbe-4e7e-8472-4edcdd3e6cba</Guid>
     <Name>WotcUndergroundOverground</Name>
@@ -9,19 +9,14 @@
     <RootNamespace>WotcUndergroundOverground</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Config\" />
-    <Folder Include="Content\" />
-    <Folder Include="Localization\" />
-    <Folder Include="Src\" />
-    <Folder Include="Src\WotcUndergroundOverground\" />
-    <Folder Include="Src\WotcUndergroundOverground\Classes\" />
+    <Folder Include="Config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModPreview.jpg" />
     <Content Include="Config\XComEditor.ini" />
     <Content Include="Config\XComEngine.ini" />
     <Content Include="Config\XComGame.ini" />
-    <Content Include="Src\WotcUndergroundOverground\Classes\X2DownloadableContentInfo_WotcUndergroundOverground.uc" />
+    <Content Include="Config\XComPlots.ini" />
+    <Content Include="ModPreview.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
 </Project>
