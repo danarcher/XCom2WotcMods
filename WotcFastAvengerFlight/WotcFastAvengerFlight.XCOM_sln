@@ -1,0 +1,19 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# XCOM ModBuddy Solution File, Format Version 11.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{f502e0f0-4791-4ae9-a6b0-333cd8fc6288}") = "WotcFastAvengerFlight", "WotcFastAvengerFlight\WotcFastAvengerFlight.x2proj", "{5950b6c9-b504-456a-8fbd-5951f35a7cf2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|XCOM 2 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5950b6c9-b504-456a-8fbd-5951f35a7cf2}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
+		{5950b6c9-b504-456a-8fbd-5951f35a7cf2}.Default|XCOM 2.Build.0 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
