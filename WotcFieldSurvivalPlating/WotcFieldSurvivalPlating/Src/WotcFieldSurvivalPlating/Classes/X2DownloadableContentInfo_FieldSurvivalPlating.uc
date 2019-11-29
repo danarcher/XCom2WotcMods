@@ -95,6 +95,7 @@ static function AugmentArmor()
     local X2ItemTemplateManager ItemManager;
     local FSPPlatingInfo Info;
     local X2ArmorTemplate Template;
+    local name AdditionalAbility;
 
     ItemManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
 
@@ -114,6 +115,10 @@ static function AugmentArmor()
                         // TODO: Fix HP and armor stat markup to base plus ability mod!
                         Template.SetUIStatMarkup("Ablative HP", eStat_ShieldHP, Info.Shield);
                     }
+                }
+                foreach Info.AdditionalAbilities(AdditionalAbility)
+                {
+                    Template.Abilities.AddItem(AdditionalAbility);
                 }
             }
             else

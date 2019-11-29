@@ -15,6 +15,9 @@ struct native FSPPlatingInfo
     var int ArmorChance;
     var int ArmorAmount;
 
+    // Additional abilities.
+    var array<name> AdditionalAbilities;
+
     // If we're modifying an existing armor template, name it.
     var name ModifyArmorTemplate;
 
@@ -36,6 +39,11 @@ struct native FSPPlatingInfo
 
 var config array<FSPPlatingInfo> PLATING;
 
+var config int DAMAGE_CONTROL_DURATION;
+var config int DAMAGE_CONTROL_BONUS_ARMOR;
+var config int DAMAGE_CONTROL_BONUS_DEFENSE;
+var config int DAMAGE_CONTROL_BONUS_DODGE;
+
 static function array<X2DataTemplate> CreateTemplates()
 {
     local array<X2DataTemplate> Templates;
@@ -48,7 +56,7 @@ static function array<X2DataTemplate> CreateTemplates()
         if (Info.Item != '')
         {
             `FSPLOG("Creating item template " $ Info.Item);
-            Templates.AddItem(CreatePlating(Info.Item, Info.Ability, Info.Image, Info.HP, Info.Shield, Info.ArmorAmount, Info.Tier, Info.Schematic, Info.BaseItem));
+            Templates.AddItem(CreatePlating(Info.Item, Info.Ability, Info.AdditionalAbilities, Info.Image, Info.HP, Info.Shield, Info.ArmorAmount, Info.Tier, Info.Schematic, Info.BaseItem));
         }
         if (Info.Schematic != '')
         {
@@ -60,9 +68,10 @@ static function array<X2DataTemplate> CreateTemplates()
     return Templates;
 }
 
-static function X2DataTemplate CreatePlating(name ItemName, name AbilityName, string Image, int HP, int Shield, int Armor, int Tier, name Schematic, name BaseItem)
+static function X2DataTemplate CreatePlating(name ItemName, name AbilityName, array<name> AdditionalAbilities, string Image, int HP, int Shield, int Armor, int Tier, name Schematic, name BaseItem)
 {
     local X2EquipmentTemplate Template;
+    local name AdditionalAbility;
 
     `CREATE_X2TEMPLATE(class'X2EquipmentTemplate', Template, ItemName);
     Template.ItemCat = 'defense';
@@ -71,6 +80,10 @@ static function X2DataTemplate CreatePlating(name ItemName, name AbilityName, st
     Template.EquipSound = "StrategyUI_Vest_Equip";
 
     Template.Abilities.AddItem(AbilityName);
+    foreach AdditionalAbilities(AdditionalAbility)
+    {
+        Template.Abilities.AddItem(AdditionalAbility);
+    }
 
     Template.bInfiniteItem = true;
     if (Tier == 0)

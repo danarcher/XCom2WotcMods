@@ -28,6 +28,8 @@ static function array<X2DataTemplate> CreateTemplates()
         }
     }
 
+    Templates.AddItem(CreateDamageControlAbility());
+
     return Templates;
 }
 
@@ -94,6 +96,58 @@ static function X2AbilityTemplate CreatePlatingAbility(name AbilityName, int HP,
     }
 
     Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
+
+    return Template;
+}
+
+static function X2AbilityTemplate CreateDamageControlPassiveAbility()
+{
+    local X2AbilityTemplate Template;
+
+    Template = PurePassive('FSPDamageControlPassive', "img:///UILibrary_PerkIcons.UIPerk_extrapadding");
+    return Template;
+}
+
+static function X2AbilityTemplate CreateDamageControlAbility()
+{
+    local X2AbilityTemplate                     Template;
+    local X2AbilityTrigger_EventListener        EventListener;
+    local X2Effect_PersistentStatChange         DamageControlEffect;
+
+    `CREATE_X2ABILITY_TEMPLATE(Template, 'FSPDamageControl');
+    Template.IconImage = "img:///UILibrary_PerkIcons.UIPerk_extrapadding";
+    Template.AbilitySourceName = 'eAbilitySource_Perk';
+    Template.Hostility = eHostility_Neutral;
+    Template.eAbilityIconBehaviorHUD = eAbilityIconBehavior_NeverShow;
+    Template.AbilityToHitCalc = default.DeadEye;
+    Template.AbilityTargetStyle = default.SelfTarget;
+    Template.bShowActivation = true;
+    Template.bSkipFireAction = true;
+    Template.bDisplayInUITooltip = true;
+    Template.bDisplayInUITacticalText = true;
+    Template.AbilityShooterConditions.AddItem(default.LivingShooterProperty);
+
+    EventListener = new class'X2AbilityTrigger_EventListener';
+    EventListener.ListenerData.EventID = 'UnitTakeEffectDamage';
+    EventListener.ListenerData.EventFn = class'XComGameState_Ability'.static.AbilityTriggerEventListener_Self;
+    EventListener.ListenerData.Deferral = ELD_OnStateSubmitted;
+    EventListener.ListenerData.Filter = eFilter_Unit;
+    Template.AbilityTriggers.AddItem(EventListener);
+
+    DamageControlEffect = new class'X2Effect_PersistentStatChange';
+    DamageControlEffect.BuildPersistentEffect(class'FieldSurvivalPlating'.default.DAMAGE_CONTROL_DURATION, false, true, false, eGameRule_PlayerTurnBegin);
+    DamageControlEffect.SetDisplayInfo(ePerkBuff_Bonus, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage, true,, Template.AbilitySourceName);
+    DamageControlEffect.DuplicateResponse = eDupe_Refresh;
+    DamageControlEffect.AddPersistentStatChange(eStat_ArmorChance, 100);
+    DamageControlEffect.AddPersistentStatChange(eStat_ArmorMitigation, class'FieldSurvivalPlating'.default.DAMAGE_CONTROL_BONUS_ARMOR);
+    DamageControlEffect.AddPersistentStatChange(eStat_Defense, class'FieldSurvivalPlating'.default.DAMAGE_CONTROL_BONUS_DEFENSE);
+    DamageControlEffect.AddPersistentStatChange(eStat_Dodge, class'FieldSurvivalPlating'.default.DAMAGE_CONTROL_BONUS_DODGE);
+    Template.AddTargetEffect(DamageControlEffect);
+
+    Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
+    Template.BuildVisualizationFn = TypicalAbility_BuildVisualization;
+
+    Template.AdditionalAbilities.AddItem('FSPDamageControlPassive');
 
     return Template;
 }
