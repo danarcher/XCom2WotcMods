@@ -38,11 +38,14 @@ struct native FSPPlatingInfo
 };
 
 var config array<FSPPlatingInfo> PLATING;
+var config array<name> SOLDIER_PLATING_PRIORITY;
 
 var config int DAMAGE_CONTROL_DURATION;
 var config int DAMAGE_CONTROL_BONUS_ARMOR;
 var config int DAMAGE_CONTROL_BONUS_DEFENSE;
 var config int DAMAGE_CONTROL_BONUS_DODGE;
+
+var localized string SquadSelectNoSoldierPlatingWarning;
 
 static function array<X2DataTemplate> CreateTemplates()
 {
