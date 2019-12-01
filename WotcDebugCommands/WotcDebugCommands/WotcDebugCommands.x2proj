@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>d5595418-3407-42c5-9caa-cca4ae8534e4</Guid>
+    <Name>WotcDebugCommands</Name>
+    <Description></Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcDebugCommands</AssemblyName>
+    <RootNamespace>WotcDebugCommands</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WotcDebugCommands\" />
+    <Folder Include="Src\WotcDebugCommands\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\WotcDebugCommands\Classes\X2DownloadableContentInfo_WotcDebugCommands.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
