@@ -66,6 +66,7 @@ static function X2AbilityTemplate AddFieldSurvivalKit()
     FlashEffect = new class'FSKTemporaryItemEffect';
     FlashEffect.EffectName = 'FSKFlashbangGrenadeEffect';
     FlashEffect.ItemName = 'FlashbangGrenade';
+    FlashEffect.ForceCheckAbilities.AddItem('LaunchGrenade');
     FlashEffect.bIgnoreItemEquipRestrictions = true;
     FlashEffect.BuildPersistentEffect(1, true, false);
     FlashEffect.DuplicateResponse = eDupe_Ignore;

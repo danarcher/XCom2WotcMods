@@ -49,16 +49,21 @@ simulated protected function OnEffectAdded(const out EffectAppliedData ApplyEffe
     {
         if(XComHQ.IsTechResearched(Conditional.ResearchProjectName))
         {
+            `PPTRACE("TempItem : Tech " $ Conditional.ResearchProjectName $ " has been researched, using " $ Conditional.ItemName $ " instead of " $ UseItemName);
             UseItemName = Conditional.ItemName;
             break;
         }
     }
+
+    `PPTRACE("TempItem : Preparing to add " $ UseItemName);
 
     EquipmentTemplate = X2WeaponTemplate(class'X2ItemTemplateManager'.static.GetItemTemplateManager().FindItemTemplate(UseItemName));
     if(bOverrideInventorySlot)
         InventorySlot = InventorySlotOverride;
     else
         InventorySlot = EquipmentTemplate.InventorySlot;
+
+    `PPTRACE("TempItem : Inventory slot is " $ InventorySlot);
 
     if(bReplaceExistingItemOnly)
         OldItemState = GetItem(UnitState, ExistingItemName);
@@ -73,19 +78,28 @@ simulated protected function OnEffectAdded(const out EffectAppliedData ApplyEffe
             OldItemState = GetItem(UnitState, AltItemName);
             if(OldItemState != none)
             {
+                `PPTRACE("TempItem: Existing " $ AltItemName $ " found, using that instead of " $ UseItemName);
                 UseItemName = AltItemName;
                 EquipmentTemplate = X2WeaponTemplate(class'X2ItemTemplateManager'.static.GetItemTemplateManager().FindItemTemplate(UseItemName));
                 if(EquipmentTemplate != none)
+                {
                     break;
+                }
             }
         }
     }
 
     if (EquipmentTemplate == none)
+    {
+        `PPTRACE("TempItem : EquipmentTemplate not found for " $ UseItemName);
         return;
+    }
 
     if(OldItemState == none && bReplaceExistingItemOnly)
+    {
+        `PPTRACE("TempItem : bReplaceExistingItemOnly and no existing " $ UseItemName $ ", giving up");
         return;
+    }
 
     if (OldItemState != none && !bReplaceExistingItemOnly)
     {
@@ -94,8 +108,13 @@ simulated protected function OnEffectAdded(const out EffectAppliedData ApplyEffe
         if (WeaponTemplate != none && WeaponTemplate.bMergeAmmo)
         {
             UpdatedItemState = XComGameState_Item(NewGameState.CreateStateObject(OldItemState.Class, OldItemState.ObjectID));
+            `PPTRACE("TempItem: adding " $ WeaponTemplate.iClipSize $ " to ammo count of " $ UpdatedItemState.Ammo);
             UpdatedItemState.Ammo += WeaponTemplate.iClipSize;
             NewGameState.AddStateObject(UpdatedItemState);
+        }
+        else
+        {
+            `PPTRACE("TempItem : Not replacing item and ammo won't merge, giving up");
         }
     }
     else // Unit either doesn't have item, or it has it and it has to be replaced
@@ -105,6 +124,8 @@ simulated protected function OnEffectAdded(const out EffectAppliedData ApplyEffe
 
         if(bReplaceExistingItemOnly)
         {
+            `PPTRACE("TempItem: bReplaceExistingItemOnly, merging out existing item in favour of new, Ammo=" $ OldItemState.Ammo $ " MIC=" $ OldItemState.MergedItemCount);
+
             //transfer ammo information over
             NewItemState.Ammo = OldItemState.Ammo;
             NewItemState.MergedItemCount = OldItemState.MergedItemCount;
@@ -227,6 +248,8 @@ simulated function XComGameState_Item AddNewItemToUnit(X2EquipmentTemplate Equip
 
     //Create the visualizer for the new item, and attach it if needed
     Visualizer.ApplyLoadoutFromGameState(UnitState, NewGameState);
+
+    `PPTRACE("TempItem : AddNewItemToUnit complete for " $ EquipmentTemplate.DataName);
 
     return ItemState;
 }
