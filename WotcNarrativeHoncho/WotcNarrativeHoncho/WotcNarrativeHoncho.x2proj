@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="12" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>ef7a7641-7492-40aa-b82e-7cf9117dcc63</Guid>
+    <Name>WotcNarrativeHoncho</Name>
+    <Description></Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcNarrativeHoncho</AssemblyName>
+    <RootNamespace>WotcNarrativeHoncho</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Localization" />
+    <Folder Include="Src\LW_Tuple\Classes" />
+    <Folder Include="Src\ModConfigMenuAPI" />
+    <Folder Include="Src\ModConfigMenuAPI\Classes" />
+    <Folder Include="Src\WotcNarrativeHoncho\Classes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Config\XComNarrativeHoncho_Settings_Defaults.ini" />
+    <Content Include="Localization\WotcNarrativeHoncho.int" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Src\LW_Tuple\Classes\LWTuple.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Button.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Checkbox.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Dropdown.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Instance.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Label.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Setting.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_SettingsGroup.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_SettingsPage.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Slider.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Spinner.uc" />
+    <Content Include="Src\ModConfigMenuAPI\MCM_API_CfgHelpers.uci" />
+    <Content Include="Src\ModConfigMenuAPI\MCM_API_Includes.uci" />
+    <Content Include="Src\WotcNarrativeHoncho\Classes\NarrativeHoncho_Settings.uc" />
+    <Content Include="Src\WotcNarrativeHoncho\Classes\NarrativeHoncho_Settings_Defaults.uc" />
+    <Content Include="Src\WotcNarrativeHoncho\Classes\UIScreenListener_NarrativeHoncho.uc" />
+    <Content Include="Src\WotcNarrativeHoncho\Classes\X2DownloadableContentInfo_NarrativeHoncho.uc" />
+    <Content Include="Src\WotcNarrativeHoncho\Classes\X2EventListener_NarrativeHoncho.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

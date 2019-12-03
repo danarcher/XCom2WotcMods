@@ -1,0 +1,17 @@
+[NarrativeHoncho_Settings]
+; Strings displayed in the MCM menu
+
+strBradfordStrategyNarratives="Bradford Narratives"
+strBradfordStrategyNarrativesTooltip="All: All narratives play. Ambient Only: Only ambient narratives play. None: Narrative Honcho narratives play. These settings don't affect cinematic sequences"
+strNoGreetingsWhenNarrativePlaying="No Greetings when Narrative Playing"
+strNoGreetingsWhenNarrativePlayingTooltip="Skip Shen and Tygan's greeting narratives, when another narrative is playing"
+strNoNarrativesInGeoscape="No Narratives In Geoscape"
+strNoNarrativesInGeoscapeTooltip="Stops narrative moments from occurring in the Geoscape. Avenger, tactical, & cinematic narratives are unaffected"
+strNoStrategyNarrativesAtAll="No Strategy Narratives At All"
+strNoStrategyNarrativesAtAllTooltip="Remove all narratives in the strategy layer"
+strNoTacticalNarrativesAtAll="No Tactical Narratives At All"
+strNoTacticalNarrativesAtAllTooltip="Remove all narratives in the tactical layer"
+strNoPostMissionNarratives="No Post-Mission Narratives"
+strNoPostMissionNarrativesTooltip="Removes the Speaker and Propaganda Announcer narratives in the Skyranger after each mission"
+strLogNarrativeInfo="Log Narrative Info"
+strLogNarrativeInfoTooltip="Send information about narratives to the game's Launch.log file. Useful for creating custom narrative rules. Has no effect on game functionality"

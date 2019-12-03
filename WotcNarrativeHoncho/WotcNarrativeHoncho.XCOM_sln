@@ -1,0 +1,19 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# XCOM ModBuddy Solution File, Format Version 11.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8ac7173b-df13-418c-8e06-ec315931892e}") = "WotcNarrativeHoncho", "WotcNarrativeHoncho\WotcNarrativeHoncho.x2proj", "{8ffcc68d-b37a-420f-a4ad-a2a5cf92c031}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|XCOM 2 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ffcc68d-b37a-420f-a4ad-a2a5cf92c031}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
+		{8ffcc68d-b37a-420f-a4ad-a2a5cf92c031}.Default|XCOM 2.Build.0 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

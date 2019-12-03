@@ -1,0 +1,1 @@
+class X2DownloadableContentInfo_NarrativeHoncho extends X2DownloadableContentInfo;
