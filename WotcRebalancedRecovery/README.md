@@ -6,6 +6,9 @@ wounded soldiers recover quickly, and no soldier is out of action for over
 
 Technical details of XCOM 2 healing, and these changes, follow.
 
+This mod also improves will recovery rates to decrease the amount of time
+soldiers spend either tired, shaken or otherwise below maximum will levels.
+
 ## Healing
 
 When soldiers return injured, they are assigned a number of wound points. The
@@ -15,8 +18,7 @@ starting health.
 The game consults a "wound severities" table, which gives min-max ranges for
 current health and wound points received, at each difficulty level.
 
-It then multiplies this value by a time scalar, which also varies by difficulty
-level. Hence:
+It then multiplies this value by a time scalar, which also varies by difficulty level. Hence:
 
     WoundPoints = WoundSeverity(HealthPercent, Difficulty) * TimeScalar(Difficulty)
 
@@ -77,3 +79,17 @@ We also set the time scalar to 1.0 for all difficulties.
 
 We consider less than 5 days to be "lightly wounded", 5 or more days to be
 "wounded" and 10 or more days to be "gravely wounded".
+
+## Will Recovery
+
+By default, soldiers take:
+
+- 14 to 20 days to fully recover when Shaken;
+- 8 to 12 days to fully recover when Tired; and
+- 0 to 16 days to fully recover otherwise.
+
+We set:
+
+- 7 to 10 days to fully recover when Shaken;
+- 4 to 6 days to fully recover when Tired; and
+- 0 to 8 days to fully recover otherwise.
