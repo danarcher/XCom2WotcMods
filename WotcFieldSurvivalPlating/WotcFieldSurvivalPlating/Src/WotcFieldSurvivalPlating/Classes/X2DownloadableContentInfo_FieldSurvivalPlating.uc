@@ -85,7 +85,19 @@ static function AddUtilitySlots()
         Armor = X2ArmorTemplate(ItemManager.FindItemTemplate(ArmorName));
         if (Armor != none)
         {
-            Armor.bAddsUtilitySlot = true;
+            if (Armor.bAddsUtilitySlot != true)
+            {
+                Armor.bAddsUtilitySlot = true;
+                `FSPLOG("Added a utility slot to " $ ArmorName $ ".");
+            }
+            else
+            {
+                `FSPLOG("Armor template " $ ArmorName $ " already has a utility slot.");
+            }
+        }
+        else
+        {
+            `FSPLOG("Armor template " $ ArmorName $ " not found.");
         }
     }
 }
