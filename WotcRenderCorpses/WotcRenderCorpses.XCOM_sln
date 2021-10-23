@@ -1,0 +1,19 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# XCOM ModBuddy Solution File, Format Version 11.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{11eca384-3073-4e72-bfe7-604d34c0cf8f}") = "WotcRenderCorpses", "WotcRenderCorpses\WotcRenderCorpses.x2proj", "{9c54bb37-d911-4d88-8104-687fc8792761}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|XCOM 2 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9c54bb37-d911-4d88-8104-687fc8792761}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
+		{9c54bb37-d911-4d88-8104-687fc8792761}.Default|XCOM 2.Build.0 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

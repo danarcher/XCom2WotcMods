@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>f666399a-c797-45b9-8dfa-1f5f190c12d3</Guid>
+    <Name>WotcRenderCorpses</Name>
+    <Description></Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcRenderCorpses</AssemblyName>
+    <RootNamespace>WotcRenderCorpses</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WotcRenderCorpses\" />
+    <Folder Include="Src\WotcRenderCorpses\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\WotcRenderCorpses\Classes\X2DownloadableContentInfo_WotcRenderCorpses.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

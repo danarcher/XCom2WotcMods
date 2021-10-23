@@ -1,0 +1,202 @@
+[RenderCorpseSectoid X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Sectoid Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Sectoid Corpse"
+
+[RenderCorpseViper X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Viper Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Viper Corpse"
+
+[RenderCorpseMuton X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Muton Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Muton Corpse"
+
+[RenderCorpseBerserker X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Berserker Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Berserker Corpse"
+
+[RenderCorpseArchon X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Archon Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Archon Corpse"
+
+[RenderCorpseAndromedon X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Andromedon Wreck</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Andromedon Wreck"
+
+[RenderCorpseFaceless X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Faceless Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Faceless Corpse"
+
+[RenderCorpseChryssalid X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Chryssalid Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Chryssalid Corpse"
+
+[RenderCorpseGatekeeper X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Gatekeeper Shell</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Gatekeeper Shell"
+
+[RenderCorpseAdventTrooper X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Trooper Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Trooper Corpse"
+
+[RenderCorpseAdventOfficer X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Officer Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Officer Corpse"
+
+[RenderCorpseAdventTurret X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Turret Wreck</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Turret Wreck"
+
+[RenderCorpseAdventMEC X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT MEC Wreck</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT MEC Wreck"
+
+[RenderCorpseAdventStunLancer X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Stun Lancer Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Stun Lancer Corpse"
+
+[RenderCorpseAdventShieldbearer X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Shieldbearer Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Shieldbearer Corpse"
+
+[RenderCorpseSectopod X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Sectopod Wreck</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Sectopod Wreck"
+
+[RenderCorpseSpectre X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Spectre Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Spectre Corpse"
+
+[RenderCorpseAdventPriest X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Priest Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Priest Corpse"
+
+[RenderCorpseAdventPurifier X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Purifier Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Purifier Corpse"
+
+[RenderCorpseAdventPathfinder X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Pathfinder Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Pathfinder Corpse"
+
+[RenderCorpseAdventPathfinderCaptain X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Pathfinder Hunter Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Pathfinder Hunter Corpse"
+
+[RenderCorpseMutonElite X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Muton Elite Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Muton Elite Corpse"
+
+[RenderCorpseBioViper X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Bio Viper Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Bio Viper Corpse"
+
+[RenderCorpseEliteBioViper X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Elite Bio Viper Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Elite Bio Viper Corpse"
+
+[RenderCorpseAdvBioAssaultTrooper X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Bio Assault Trooper Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Bio Assault Trooper Corpse"
+
+[RenderCorpseAdvBioRocketTrooper X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Bio Rocket Trooper Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Bio Rocket Trooper Corpse"
+
+[RenderCorpseBioZerker X2TechTemplate]
+DisplayName="<font color='#578A53'>Render BioZerker Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render BioZerker Corpse"
+
+[RenderCorpseBioFaceless X2TechTemplate]
+DisplayName="<font color='#578A53'>Render Bio Faceless Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render Bio Faceless Corpse"
+
+[RenderCorpseAdvBioGeneral X2TechTemplate]
+DisplayName="<font color='#578A53'>Render ADVENT Bio General Corpse</font>"
+Summary="Rendering the remains of our adversaries yields resources."
+CodeName="Vatican"
+LongDescription="The remains have been rendered, yielding resources."
+AlertString="Render ADVENT Bio General Corpse"
