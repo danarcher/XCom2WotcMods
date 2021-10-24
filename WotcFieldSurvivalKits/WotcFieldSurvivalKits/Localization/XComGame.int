@@ -4,3 +4,10 @@ LocLongDescription="This soldier carries a survival kit in the field, with extra
 LocHelpText="Carrying extra utility items."
 LocFlyOverText="Field Survival Kit"
 LocPromotionPopupText="<Bullet/> Passive effect."
+
+[FieldSurvivalTraining X2AbilityTemplate]
+LocFriendlyName="Field Training"
+LocLongDescription="This soldier has field training granting them additional aim and a per-rank damage boost."
+LocHelpText="Field training boosts aim and damage."
+LocFlyOverText="Field Survival Training"
+LocPromotionPopupText="<Bullet/> Passive effect."

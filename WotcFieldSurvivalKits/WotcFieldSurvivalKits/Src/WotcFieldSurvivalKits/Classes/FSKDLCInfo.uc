@@ -30,6 +30,12 @@ static function UpdateCharacterTemplates()
             {
                 CharTemplate.Abilities.AddItem('FieldSurvivalKit');
             }
+
+            if (CharTemplate != none &&
+                CharTemplate.Abilities.Find('FieldSurvivalTraining') == INDEX_NONE)
+            {
+                CharTemplate.Abilities.AddItem('FieldSurvivalTraining');
+            }
         }
     }
 }

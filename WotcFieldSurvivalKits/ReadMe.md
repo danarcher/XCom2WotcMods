@@ -2,6 +2,8 @@
 
 Grant your troops an additional single use each of a medkit, a flashbang and a smoke grenade during tactical battles, in addition to equipped items.
 
+Also grants survival training, granting additional aim as well as a damage boost which increases per rank. This is only necessary for heavily modded late games, and can be disabled through the XComFieldSurvivalKits.ini config file.
+
 Designed for XCOM 2: War of the Chosen and compatible with LWOTC.
 
 ## Rationale

@@ -1,10 +1,13 @@
 class FSKAbilities extends X2Ability config(FieldSurvivalKits) dependson(FSKTemporaryItemEffect);
 
+var config int TrainingAimBoost;
+
 static function array<X2DataTemplate> CreateTemplates()
 {
     local array<X2DataTemplate> Templates;
 
     Templates.AddItem(AddFieldSurvivalKit());
+    Templates.AddItem(AddFieldSurvivalTraining());
 
     return Templates;
 }
@@ -71,6 +74,40 @@ static function X2AbilityTemplate AddFieldSurvivalKit()
     FlashEffect.BuildPersistentEffect(1, true, false);
     FlashEffect.DuplicateResponse = eDupe_Ignore;
     Template.AddTargetEffect(FlashEffect);
+
+    Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
+
+    return Template;
+}
+
+static function X2AbilityTemplate AddFieldSurvivalTraining()
+{
+    local X2AbilityTemplate Template;
+    local X2Effect_PersistentStatChange IconEffect;
+    local X2Effect_FSKRankBonusDamage BonusDamageEffect;
+
+    `CREATE_X2ABILITY_TEMPLATE(Template, 'FieldSurvivalTraining');
+
+    Template.IconImage = "img:///UILibrary_PerkIcons.UIPerk_ambush";
+    Template.AbilitySourceName = 'eAbilitySource_Perk';
+    Template.eAbilityIconBehaviorHUD = eAbilityIconBehavior_NeverShow;
+    Template.Hostility = eHostility_Neutral;
+    Template.AbilityToHitCalc = default.DeadEye;
+    Template.AbilityTargetStyle = default.SelfTarget;
+    Template.AbilityTriggers.AddItem(default.UnitPostBeginPlayTrigger);
+    Template.bIsPassive = true;
+    Template.bCrossClassEligible = false;
+
+    IconEffect = new class'X2Effect_PersistentStatChange';
+    IconEffect.BuildPersistentEffect(1, true, false);
+    IconEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocLongDescription, Template.IconImage);
+    IconEffect.AddPersistentStatChange(eStat_Offense, default.TrainingAimBoost);
+    Template.AddTargetEffect(IconEffect);
+
+    BonusDamageEffect = new class'X2Effect_FSKRankBonusDamage';
+    BonusDamageEffect.BuildPersistentEffect(1, true, false);
+    //BonusDamageEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.LocLongDescription, Template.IconImage);
+    Template.AddTargetEffect(BonusDamageEffect);
 
     Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
 
