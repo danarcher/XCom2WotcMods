@@ -1,0 +1,19 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# XCOM ModBuddy Solution File, Format Version 11.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{837b6326-e9a5-4503-84f4-78fe7f079a03}") = "WotcModTweaks", "WotcModTweaks\WotcModTweaks.x2proj", "{9e161b9f-aa3b-463e-b59a-83e78ae07bb5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|XCOM 2 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9e161b9f-aa3b-463e-b59a-83e78ae07bb5}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
+		{9e161b9f-aa3b-463e-b59a-83e78ae07bb5}.Default|XCOM 2.Build.0 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

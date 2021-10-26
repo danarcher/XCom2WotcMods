@@ -1,0 +1,474 @@
+;=============================================================================
+; RESEARCH
+
+[MagnetizedWeapons X2TechTemplate]
+DisplayName="Mag Rifles and Pistols"
+
+[GaussWeapons X2TechTemplate]
+DisplayName="Mag Shotgun, Cannon and Rifle"
+
+[AlloyCannon X2TechTemplate]
+DisplayName="Plasma Shotgun"
+
+[HeavyPlasma X2TechTemplate]
+DisplayName="Plasma Cannon"
+
+[PlasmaSniper X2TechTemplate]
+DisplayName="Plasma Sniper Rifle"
+
+[EXOSuit X2TechTemplate]
+DisplayName="Heavy Plated Armour"
+
+[SpiderSuit X2TechTemplate]
+DisplayName="Grapple Plated Armour"
+
+[WraithSuit X2TechTemplate]
+DisplayName="Grapple Power Armour"
+
+[WARSuit X2TechTemplate]
+DisplayName="Heavy Power Armour"
+
+[RAGESuit X2TechTemplate]
+DisplayName="Berserker Armor"
+
+[SerpentSuit X2TechTemplate]
+DisplayName="Viper Armour"
+
+[IcarusArmor X2TechTemplate]
+DisplayName="Archon Armour"
+
+;=============================================================================
+; RIFLES
+
+[AssaultRifle_CV X2WeaponTemplate]
+FriendlyName="Assault Rifle"
+
+[TLE_AssaultRifle_CV X2WeaponTemplate]
+FriendlyName="Legacy Assault Rifle"
+
+[AssaultRifle_MG X2WeaponTemplate]
+FriendlyName="Mag Rifle"
+
+[TLE_AssaultRifle_MG X2WeaponTemplate]
+FriendlyName="Legacy Mag Rifle"
+
+[AssaultRifle_BM X2WeaponTemplate]
+FriendlyName="Plasma Rifle"
+
+[TLE_AssaultRifle_BM X2WeaponTemplate]
+FriendlyName="Legacy Plasma Rifle"
+
+;=============================================================================
+; ORDINARY PISTOLS
+
+[Pistol_CV X2WeaponTemplate]
+FriendlyName="Pistol"
+
+[TLE_Pistol_CV X2WeaponTemplate]
+FriendlyName="Legacy Pistol"
+
+[Pistol_MG X2WeaponTemplate]
+FriendlyName="Mag Pistol"
+
+[TLE_Pistol_MG X2WeaponTemplate]
+FriendlyName="Legacy Mag Pistol"
+
+[Pistol_BM X2WeaponTemplate]
+FriendlyName="Plasma Pistol"
+
+[TLE_Pistol_BM X2WeaponTemplate]
+FriendlyName="Legacy Plasma Pistol"
+
+;=============================================================================
+; SNIPER RIFLES
+
+[SniperRifle_CV X2WeaponTemplate]
+FriendlyName="Sniper Rifle"
+
+[TLE_SniperRifle_CV X2WeaponTemplate]
+FriendlyName="Legacy Sniper Rifle"
+
+[SniperRifle_MG X2WeaponTemplate]
+FriendlyName="Mag Sniper Rifle"
+
+[TLE_SniperRifle_MG X2WeaponTemplate]
+FriendlyName="Legacy Mag Sniper Rifle"
+
+[SniperRifle_BM X2WeaponTemplate]
+FriendlyName="Plasma Sniper Rifle"
+
+[TLE_SniperRifle_BM X2WeaponTemplate]
+FriendlyName="Legacy Plasma Sniper Rifle"
+
+;=============================================================================
+; SHOTGUNS
+
+[Shotgun_CV X2WeaponTemplate]
+FriendlyName="Shotgun"
+
+[TLE_Shotgun_CV X2WeaponTemplate]
+FriendlyName="Legacy Shotgun"
+
+[Shotgun_MG X2WeaponTemplate]
+FriendlyName="Mag Shotgun"
+
+[TLE_Shotgun_MG X2WeaponTemplate]
+FriendlyName="Legacy Mag Shotgun"
+
+[Shotgun_BM X2WeaponTemplate]
+FriendlyName="Plasma Shotgun"
+
+[TLE_Shotgun_BM X2WeaponTemplate]
+FriendlyName="Legacy Plasma Shotgun"
+
+;=============================================================================
+; SAWN-OFF "SHORTY" SHOTGUN
+
+[SawedOffShotgun_CV X2WeaponTemplate]
+FriendlyName="Shorty"
+
+[SawedOffShotgun_MG X2WeaponTemplate]
+FriendlyName="Mag Shorty"
+
+[SawedOffShotgun_BM X2WeaponTemplate]
+FriendlyName="Plasma Shorty"
+
+;=============================================================================
+; ARC-THROWER
+
+[ArcThrower_CV X2WeaponTemplate]
+FriendlyName="Arc Thrower"
+
+[ArcThrower_MG X2WeaponTemplate]
+FriendlyName="Mag Arc Thrower"
+
+[ArcThrower_BM X2WeaponTemplate]
+FriendlyName="Plasma Arc Thrower"
+
+;=============================================================================
+; CANNONS
+
+[Cannon_CV X2WeaponTemplate]
+FriendlyName="Cannon"
+
+[TLE_Cannon_CV X2WeaponTemplate]
+FriendlyName="Legacy Cannon"
+
+[Cannon_MG X2WeaponTemplate]
+FriendlyName="Mag Cannon"
+
+[TLE_Cannon_MG X2WeaponTemplate]
+FriendlyName="Legacy Mag Cannon"
+
+[Cannon_BM X2WeaponTemplate]
+FriendlyName="Plasma Cannon"
+
+[TLE_Cannon_BM X2WeaponTemplate]
+FriendlyName="Legacy Plasma Cannon"
+
+;=============================================================================
+; REAPER RIFLES
+
+[VektorRifle_CV X2WeaponTemplate]
+FriendlyName="Reaper Rifle"
+
+[VektorRifle_MG X2WeaponTemplate]
+FriendlyName="Mag Reaper Rifle"
+
+[VektorRifle_BM X2WeaponTemplate]
+FriendlyName="Plasma Reaper Rifle"
+
+;=============================================================================
+; BULLPUPS
+
+[Bullpup_CV X2WeaponTemplate]
+FriendlyName="Bullpup"
+
+[Bullpup_MG X2WeaponTemplate]
+FriendlyName="Mag Bullpup"
+
+[Bullpup_BM X2WeaponTemplate]
+FriendlyName="Plasma Bullpup"
+
+;=============================================================================
+; RIPJACKS
+
+[WristBlade_CV X2PairedWeaponTemplate]
+FriendlyName="Ripjack"
+
+[WristBlade_MG X2PairedWeaponTemplate]
+FriendlyName="Mag Ripjack"
+
+[WristBlade_BM X2PairedWeaponTemplate]
+FriendlyName="Plasma Ripjack"
+
+;=============================================================================
+; TEMPLAR GAUNTLETS
+
+[ShardGauntlet_CV X2PairedWeaponTemplate]
+FriendlyName="Templar Gauntlets"
+
+[ShardGauntlet_MG X2PairedWeaponTemplate]
+FriendlyName="Mag Templar Gauntlets"
+
+[ShardGauntlet_BM X2PairedWeaponTemplate]
+FriendlyName="Plasma Templar Gauntlets"
+
+;=============================================================================
+; TEMPLAR PISTOLS
+
+[Sidearm_CV X2WeaponTemplate]
+FriendlyName="Templar Pistol"
+
+[Sidearm_MG X2WeaponTemplate]
+FriendlyName="Mag Templar Pistol"
+
+[Sidearm_BM X2WeaponTemplate]
+FriendlyName="Plasma Templar Pistol"
+
+;=============================================================================
+; SHADOWKEEPER
+
+[AlienHunterPistol_CV X2WeaponTemplate]
+FriendlyName="Shadowkeeper"
+
+[AlienHunterPistol_MG X2WeaponTemplate]
+FriendlyName="Mag Shadowkeeper"
+
+[AlienHunterPistol_BM X2WeaponTemplate]
+FriendlyName="Plasma Shadowkeeper"
+
+;=============================================================================
+; BOLT CASTERS
+
+[AlienHunterRifle_CV X2WeaponTemplate]
+FriendlyName="Bolt Caster"
+
+[AlienHunterRifle_MG X2WeaponTemplate]
+FriendlyName="Mag Bolt Caster"
+
+[AlienHunterRifle_BM X2WeaponTemplate]
+FriendlyName="Plasma Bolt Caster"
+
+;=============================================================================
+; SWORDS
+
+[Sword_CV X2WeaponTemplate]
+FriendlyName="Sword"
+
+[TLE_Sword_CV X2WeaponTemplate]
+FriendlyName="Legacy Sword"
+
+[Sword_MG X2WeaponTemplate]
+FriendlyName="Mag Sword"
+
+[TLE_Sword_MG X2WeaponTemplate]
+FriendlyName="Legacy Mag Sword"
+
+[Sword_BM X2WeaponTemplate]
+FriendlyName="Plasma Sword"
+
+[TLE_Sword_BM X2WeaponTemplate]
+FriendlyName="Legacy Plasma Sword"
+
+;=============================================================================
+; KNIVES
+
+[CombatKnife_CV X2WeaponTemplate]
+FriendlyName="Knife"
+
+[CombatKnife_MG X2WeaponTemplate]
+FriendlyName="Mag Knife"
+
+[CombatKnife_BM X2WeaponTemplate]
+FriendlyName="Plasma Knife"
+
+;=============================================================================
+; AXES
+
+[AlienHunterAxe_CV X2PairedWeaponTemplate]
+FriendlyName="Hunter's Axe"
+
+[AlienHunterAxe_MG X2PairedWeaponTemplate]
+FriendlyName="Mag Hunter's Axe"
+
+[AlienHunterAxe_BM X2PairedWeaponTemplate]
+FriendlyName="Plasma Hunter's Axe"
+
+[AlienHunterAxeThrown_CV X2WeaponTemplate]
+FriendlyName="Hunter's Axe"
+
+[AlienHunterAxeThrown_MG X2WeaponTemplate]
+FriendlyName="Mag Hunter's Axe"
+
+[AlienHunterAxeThrown_BM X2WeaponTemplate]
+FriendlyName="Plasma Hunter's Axe"
+
+;=============================================================================
+; HOLOTARGETER
+
+[Holotargeter_CV X2WeaponTemplate]
+FriendlyName="Holotargeter"
+
+[Holotargeter_MG X2WeaponTemplate]
+FriendlyName="Mag Holotargeter"
+
+[Holotargeter_BM X2WeaponTemplate]
+FriendlyName="Plasma Holotargeter"
+
+;=============================================================================
+; SPARK WEAPONS
+
+[SparkRifle_CV X2WeaponTemplate]
+FriendlyName="SPARK Rifle"
+
+[SparkRifle_MG X2WeaponTemplate]
+FriendlyName="Mag SPARK Rifle"
+
+[SparkRifle_BM X2WeaponTemplate]
+FriendlyName="Plasma SPARK Rifle"
+
+[IRI_ArtilleryCannon_CV X2WeaponTemplate]
+FriendlyName="SPARK Artillery"
+
+[IRI_ArtilleryCannon_MG X2WeaponTemplate]
+FriendlyName="Mag SPARK Artillery"
+
+[IRI_ArtilleryCannon_BM X2WeaponTemplate]
+FriendlyName="Plasma SPARK Artillery"
+
+[IRI_Incinerator_CV X2WeaponTemplate]
+FriendlyName="SPARK Flamethrower"
+
+[IRI_Incinerator_MG X2WeaponTemplate]
+FriendlyName="Mag SPARK Flamethrower"
+
+[IRI_Incinerator_BM X2WeaponTemplate]
+FriendlyName="Plasma SPARK Flamethrower"
+
+[IRI_OrdnanceLauncher_CV X2GrenadeLauncherTemplate]
+FriendlyName="SPARK Launcher"
+
+[IRI_OrdnanceLauncher_MG X2GrenadeLauncherTemplate]
+FriendlyName="Mag SPARK Launcher"
+
+[IRI_OrdnanceLauncher_BM X2GrenadeLauncherTemplate]
+FriendlyName="Plasma SPARK Launcher"
+
+[IRI_Heavy_Autogun X2WeaponTemplate]
+FriendlyName="SPARK Pistol"
+
+[IRI_Heavy_Autogun_MK2 X2WeaponTemplate]
+FriendlyName="Plasma SPARK Pistol"
+
+[IRI_RestorativeMist_CV X2WeaponTemplate]
+FriendlyName="SPARK Healing Mist"
+
+[IRI_RestorativeMist_Heal X2AbilityTemplate]
+LocFriendlyName="Healing Mist"
+
+[IRI_RestorativeMist_HealBit X2AbilityTemplate]
+LocFriendlyName="BIT Healing Mist"
+
+[IRI_ElectroPulse_CV X2WeaponTemplate]
+FriendlyName="SPARK EMP"
+FriendlyNamePlural="SPARK EMP"
+
+[IRI_ElectroPulse X2AbilityTemplate]
+LocFriendlyName="EMP"
+
+[IRI_ElectroPulse_Bit X2AbilityTemplate]
+LocFriendlyName="BIT EMP"
+
+;=============================================================================
+; ARMOUR
+
+[KevlarArmor X2ArmorTemplate]
+FriendlyName="Kevlar Armor"
+
+[MediumPlatedArmor X2ArmorTemplate]
+FriendlyName="Plated Armor"
+
+[LightPlatedArmor X2ArmorTemplate]
+FriendlyName="Grapple Plated Armour"
+
+[HeavyPlatedArmor X2ArmorTemplate]
+FriendlyName="Heavy Plated Armour"
+
+[MediumPoweredArmor X2ArmorTemplate]
+FriendlyName="Power Armour"
+
+[LightPoweredArmor X2ArmorTemplate]
+FriendlyName="Grapple Power Armour"
+
+[HeavyPoweredArmor X2ArmorTemplate]
+FriendlyName="Heavy Power Armour"
+
+[ReaperArmor X2ArmorTemplate]
+FriendlyName="Reaper Armor"
+
+[PlatedReaperArmor X2ArmorTemplate]
+FriendlyName="Reaper Plated Armor"
+
+[PoweredReaperArmor X2ArmorTemplate]
+FriendlyName="Reaper Power Armour"
+
+[SkirmisherArmor X2ArmorTemplate]
+FriendlyName="Skirmisher Armor"
+
+[PlatedSkirmisherArmor X2ArmorTemplate]
+FriendlyName="Skirmisher Plated Armor"
+
+[PoweredSkirmisherArmor X2ArmorTemplate]
+FriendlyName="Skirmisher Power Armor"
+
+[TemplarArmor X2ArmorTemplate]
+FriendlyName="Templar Armor"
+
+[PlatedTemplarArmor X2ArmorTemplate]
+FriendlyName="Templar Plated Armor"
+
+[PoweredTemplarArmor X2ArmorTemplate]
+FriendlyName="Templar Power Armor"
+
+[PsiOperativeKevlarArmor X2ArmorTemplate]
+FriendlyName="Prototype Kevlar Armor"
+
+[PsiOperativePlatedArmor X2ArmorTemplate]
+FriendlyName="Prototype Plated Armor"
+
+[PsiOperativePoweredArmor X2ArmorTemplate]
+FriendlyName="Prototype Power Armor"
+
+[TLE_KevlarArmor X2ArmorTemplate]
+FriendlyName="Legacy Kevlar Armor"
+
+[TLE_PlatedArmor X2ArmorTemplate]
+FriendlyName="Legacy Plated Armor"
+
+[TLE_PoweredArmor X2ArmorTemplate]
+FriendlyName="Legacy Power Armor"
+
+[MediumAlienArmor X2ArmorTemplate]
+FriendlyName="Archon Armour"
+
+[LightAlienArmor X2ArmorTemplate]
+FriendlyName="Viper Armour"
+
+[LightAlienArmorMk2 X2ArmorTemplate]
+FriendlyName="Viper Power Armor"
+
+[HeavyAlienArmor X2ArmorTemplate]
+FriendlyName="Berserker Armour"
+
+[HeavyAlienArmorMk2 X2ArmorTemplate]
+FriendlyName="Berserker Power Armour"
+
+[SparkArmor X2SparkArmorTemplate_DLC_3]
+FriendlyName="SPARK Armor"
+
+[PlatedSparkArmor X2SparkArmorTemplate_DLC_3]
+FriendlyName="SPARK Plated Armor"
+
+[PoweredSparkArmor X2SparkArmorTemplate_DLC_3]
+FriendlyName="SPARK Power Armor"
