@@ -1,0 +1,19 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# XCOM ModBuddy Solution File, Format Version 11.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{52773017-6d3a-4a3b-8bfd-40e112fd9877}") = "WotcFieldSurvivalSlots", "WotcFieldSurvivalSlots\WotcFieldSurvivalSlots.x2proj", "{f1f77330-020f-40a5-b196-81f622eee005}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|XCOM 2 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{f1f77330-020f-40a5-b196-81f622eee005}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
+		{f1f77330-020f-40a5-b196-81f622eee005}.Default|XCOM 2.Build.0 = Default|XCOM 2
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

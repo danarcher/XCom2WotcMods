@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="12" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>dec800d0-8ab4-49fc-af25-950892667fbc</Guid>
+    <Name>WotcFieldSurvivalSlots</Name>
+    <Description></Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcFieldSurvivalSlots</AssemblyName>
+    <RootNamespace>WotcFieldSurvivalSlots</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Src\WotcFieldSurvivalSlots\Classes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\WotcFieldSurvivalSlots\Classes\FieldSurvivalSlots_Vest.uc" />
+    <Content Include="Src\WotcFieldSurvivalSlots\Classes\X2DownloadableContentInfo_FieldSurvivalSlots.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
